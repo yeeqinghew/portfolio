@@ -3,11 +3,28 @@
 	width: 600px;
 }
 
-#page-main #introduction {
+#page-main #intro {
 	margin: 10vh 0 0 0;
 }
 
-#page-main #introduction #country::before {
+#page-main #intro figure {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#page-main #intro figure img {
+	width: 560px;
+	height:  560px;
+	border-radius: 50%;
+}
+
+#page-main #intro > .text {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 150px;
+}
+
+#page-main #intro .text #country::before {
 	content: url(../../img/location.svg);
 	display: inline-block;
 	width: 16px;
@@ -15,7 +32,7 @@
 	vertical-align: top;
 }
 
-#page-main #introduction h1 {
+#page-main #intro .text h1 {
 	font-family: 'Sacramento', cursive;
 	font-size: 4.5rem;
 	line-height: 1.25;
@@ -23,4 +40,16 @@
 	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     opacity: 1;
+}
+
+#page-main #short-intro {
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+#page-main #about-me {
+	margin: 9vh 0 9vh 0;
+}
+#page-main #portfolio-preview {
+	margin: 50px 0 25px 0;
 }
