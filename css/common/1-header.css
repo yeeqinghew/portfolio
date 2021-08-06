@@ -1,0 +1,29 @@
+html {
+	background-color: #E4F6F8;
+	font-family: 'Neue Haas Display', sans-serif;
+	margin-left: 100px;
+}
+/***** Site Header *****/
+#site-header {
+	box-shadow: 0 2px 4px #E4F6F8;
+}
+
+#site-header p {
+	display: inline-block;
+}
+
+#site-header #website-name {
+	font-size: 1.125rem;
+}
+
+#site-header #email {
+	position: absolute;
+	font-size: 1.125rem;
+	right: 125px;
+}
+
+#site-header #email::after {
+	content: url('../../img/right.svg');
+	vertical-align: middle;
+	display: inline-block;
+}

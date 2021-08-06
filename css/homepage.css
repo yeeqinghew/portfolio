@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+#page-main .text {
+	width: 600px;
+}
+
+#page-main #introduction {
+	margin: 10vh 0 0 0;
+}
+
+#page-main #introduction #country::before {
+	content: url(../../img/location.svg);
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
+}
+
+#page-main #introduction h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 4.5rem;
+	line-height: 1.25;
+	margin: 30px 0 72px 0;
+	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+}
