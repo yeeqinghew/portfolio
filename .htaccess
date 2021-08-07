@@ -1,7 +1,11 @@
-##Force SSL 
+RewriteEngine on
+#RewriteBase /
 
-#Heroku way
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+# only rewrite if the requested file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-s
 
-#If neither above conditions are met, redirect to https
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# pass the rest of the request into index.php to handle
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+# Prevent the web from seeing the readme.md just to be safe
+RewriteRule ^README\.MD$ - [L,F]
