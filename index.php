@@ -10,6 +10,9 @@ $page = findPage();
 $escaped_page_title = htmlspecialchars($page['title']);
 $escaped_page_description = htmlspecialchars($page['description']);
 
+// Prevent Click-jacking: only need this on initial page load
+header("Content-Security-Policy: frame-ancestors 'none';");
+header('X-Frame-Options: Deny');
 ?>
 
 <!DOCTYPE HTML>
@@ -18,6 +21,7 @@ $escaped_page_description = htmlspecialchars($page['description']);
 	<meta charset="utf-8">
 	<title><?php echo $escaped_page_title; ?></title>
 	<meta name="description" content="<?php echo $escaped_page_description; ?>">
+	<meta property="og:url" content="<?php echo $SITE_URL. '/' . $page['name']; ?>" />
 	<link rel="icon" href="../../img/star.svg">
 	<link rel="stylesheet" type="text/css" href="/css/<?php echo $page['css']?>?v=1" data-page="<?php echo $page['name'];?>">
 </head>
