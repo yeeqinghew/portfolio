@@ -1,4 +1,9 @@
 <?php
+
+$SITE_URL = ( (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] )? 'https://' : 'http://') . $_SERVER['SERVER_NAME'];
+if ($_SERVER['SERVER_PORT'] != 80 && $_SERVER['SERVER_PORT'] != 443) {
+	$SITE_URL .= ':' . $_SERVER['SERVER_PORT'];
+}
 require(__DIR__.'/private/findPage.php');
 $page = findPage();
 
