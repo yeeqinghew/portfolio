@@ -9,6 +9,7 @@ $page = findPage();
 <head>
 	<meta charset="utf-8">
 	<title>Yee Qing</title>
+	<link rel="icon" href="../../img/star.svg">
 	<link rel="stylesheet" type="text/css" href="/css/<?php echo $page['css']?>?v=1" data-page="<?php echo $page['name'];?>">
 </head>
 <body>
