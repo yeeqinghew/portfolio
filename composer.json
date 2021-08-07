@@ -1,4 +1,6 @@
 {
     "name": "yeeqinghew/portfolio",
-    "require": {}
+    "require": {
+        "symfony/apache-pack": "^1.0"
+    }
 }
