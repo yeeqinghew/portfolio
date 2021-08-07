@@ -3,5 +3,17 @@
     "homepage": {
         "title": "Yee Qing",
         "description": "Portfolios"
+    },
+    "portfolio-pmid": {
+        "title": "Yee Qing",
+        "description": "Portfolio - PMID and Client App"
+    },
+    "portfolio-emservices": {
+        "title": "Yee Qing",
+        "description": "Portfolio - EM"
+    },
+    "portfolio-shoppawholic": {
+        "title": "Yee Qing",
+        "description": "Portfolio - shopPAWholic"
     }
 }

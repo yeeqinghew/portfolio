@@ -21,6 +21,7 @@ function findPage() {
 
 	// Read pages.json
 	$json = file_get_contents(__DIR__.'/pages.json');
+	
 	$metas = json_decode($json, TRUE); // format to associate array
 
 	// Get meta for page
@@ -45,12 +46,6 @@ function findPage() {
 		}
 	} // normal page
 
-
-	// AMP
-	$amp_file_name = substr($result['html'], 0, -5) . '.amp.html';
-	if (is_readable(__DIR__.'/../html/' . $amp_file_name)) {
-		$result['amp'] = $amp_file_name;
-	}
-
 	return $result;
 } // findPage()
+?>

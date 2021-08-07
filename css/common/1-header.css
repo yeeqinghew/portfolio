@@ -1,10 +1,22 @@
+@font-face {
+	font-family: 'Cormorant';
+	src:  url('../../font/Cormorant-Regular.woff2') format('woff2'),
+	url('../../font/Cormorant-Regular.woff') format('woff');
+}
+
 html {
 	background-color: #E4F6F8;
 	font-family: 'Neue Haas Display', sans-serif;
 	margin-left: 100px;
+	margin-right: 100px;
+	overflow-x: hidden;
 }
 
 /***** Site Header *****/
+#site-header a {
+	text-decoration: none;
+	color: black;
+}
 #site-header p {
 	display: inline-block;
 }
@@ -29,7 +41,10 @@ html {
 }
 
 #site-header #email::after {
-	content: url('../../img/right.svg');
+	content: url('../../img/gmail.svg');
 	vertical-align: middle;
 	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
 }

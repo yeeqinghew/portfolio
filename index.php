@@ -1,6 +1,12 @@
 <?php
 require(__DIR__.'/private/findPage.php');
 $page = findPage();
+echo "<script>console.log('Debug Pages: " . $page['html'] . "' );</script>";
+echo "<script>console.log('Debug Pages: " . $page['css'] . "' );</script>";
+echo "<script>console.log('Debug Pages: " . $page['js'] . "' );</script>";
+
+$escaped_page_title = htmlspecialchars($page['title']);
+$escaped_page_description = htmlspecialchars($page['description']);
 
 ?>
 
@@ -8,7 +14,8 @@ $page = findPage();
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Yee Qing</title>
+	<title><?php echo $escaped_page_title; ?></title>
+	<meta name="description" content="<?php echo $escaped_page_description; ?>">
 	<link rel="icon" href="../../img/star.svg">
 	<link rel="stylesheet" type="text/css" href="/css/<?php echo $page['css']?>?v=1" data-page="<?php echo $page['name'];?>">
 </head>
@@ -22,5 +29,5 @@ $page = findPage();
 	
 		<?php include __DIR__.'/html/common/2-footer.html'; ?>
 	</div><!-- end of page -->
-<!-- <?php echo file_get_contents("html/homepage.html"); ?>  -->
+<script src="/js/<?php echo $page['js']?>"></script>
 </body>
