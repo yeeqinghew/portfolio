@@ -3,23 +3,36 @@ html {
 	font-family: 'Neue Haas Display', sans-serif;
 	margin-left: 100px;
 }
-/***** Site Header *****/
-#site-header {
-	margin-top: 50px;
+
+@font-face {
+	font-family: 'Sacramento';
+	src: url('../../font/Sacramento-Regular') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../../font/Sacramento-Regular') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	font-size: 6rem;
 }
 
+/***** Site Header *****/
 #site-header p {
 	display: inline-block;
 }
 
 #site-header #website-name {
 	font-size: 1.125rem;
+	margin: 24px 0 0 0;
+}
+
+#site-header #website-name::before {
+	content: url(../../img/star.svg);
+	vertical-align: middle;
+	display: inline-block;
 }
 
 #site-header #email {
 	position: absolute;
-	font-size: 1.125rem;
+	font-size: 16px;
 	right: 125px;
+	top: 24px;
+	color: #333;
 }
 
 #site-header #email::after {

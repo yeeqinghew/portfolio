@@ -7,7 +7,7 @@ $page = findPage();
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="/css/<?php echo $page['css']?>" data-page="<?php echo $page['name'];?>">
+	<link rel="stylesheet" type="text/css" href="/css/<?php echo $page['css']?>?v=1" data-page="<?php echo $page['name'];?>">
 </head>
 <body>
 	<div id="page" data-page="<?php echo $page['name'];?>">

@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-#page-main .text {
-	width: 600px;
-}
 
 #page-main #intro {
-	margin: 10vh 0 0 0;
+	margin: 11vh 0 0 0;
 }
 
 #page-main #intro figure {
@@ -13,31 +10,39 @@
 }
 
 #page-main #intro figure img {
-	width: 560px;
-	height:  560px;
+	width: 500px;
+	height:  500px;
 	border-radius: 50%;
+	margin-top: 36px;
 }
 
 #page-main #intro > .text {
+	width: 560px;
 	display: inline-block;
-	vertical-align: middle;
-	margin-right: 150px;
+	vertical-align: top;
+	margin-right: 72px;
+}
+
+#page-main #intro #rainbow {
+	position: absolute;
+	left: 264px;
+    top: auto;
 }
 
 #page-main #intro .text #country::before {
-	content: url(../../img/location.svg);
+	content: url(../../img/pin.svg);
 	display: inline-block;
 	width: 16px;
 	height: 16px;
+	font-weight: bold;
 	vertical-align: top;
 }
 
 #page-main #intro .text h1 {
 	font-family: 'Sacramento', cursive;
-	font-size: 4.5rem;
+	font-size: 6rem;
 	line-height: 1.25;
-	margin: 30px 0 72px 0;
-	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	margin: 56px 0 72px 0;
     transform-style: preserve-3d;
     opacity: 1;
 }
