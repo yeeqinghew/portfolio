@@ -1,11 +1,9 @@
-RewriteEngine on
-#RewriteBase /
+RewriteEngine On
 
-# only rewrite if the requested file doesn't exist
-RewriteCond %{REQUEST_FILENAME} !-s
+# Redirect Trailing Slashes...
+RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-# pass the rest of the request into index.php to handle
-RewriteRule ^(.*)$ /index.php/$1 [L]
-
-# Prevent the web from seeing the readme.md just to be safe
-RewriteRule ^README\.MD$ - [L,F]
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
