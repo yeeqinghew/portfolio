@@ -4,13 +4,6 @@ html {
 	margin-left: 100px;
 }
 
-@font-face {
-	font-family: 'Sacramento';
-	src: url('../../font/Sacramento-Regular') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../../font/Sacramento-Regular') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	font-size: 6rem;
-}
-
 /***** Site Header *****/
 #site-header p {
 	display: inline-block;

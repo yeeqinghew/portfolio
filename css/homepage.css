@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* Sacramento */
+@font-face {
+	font-family: 'Sacramento';
+	src: url('../../font/Sacramento-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../../font/Sacramento-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 #page-main #intro {
 	margin: 11vh 0 0 0;
@@ -48,13 +53,31 @@
 }
 
 #page-main #short-intro {
-	font-size: 1.25rem;
+	font-size: 16px;
 	line-height: 1.5;
 }
+
 
 #page-main #about-me {
 	margin: 9vh 0 9vh 0;
 }
+
 #page-main #portfolio-preview {
 	margin: 50px 0 25px 0;
+}
+
+#page-main #portfolio-preview figure {
+	display: inline-block;
+	vertical-align: middle;
+	width: 480px;
+}
+#page-main #portfolio-preview figure img {
+	width: 480px;
+	height: 280px;
+}
+
+#page-main #portfolio-preview .text {
+	display: inline-block;
+	vertical-align: top;
+	width: 560px;
 }
