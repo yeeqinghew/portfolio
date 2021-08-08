@@ -28,13 +28,13 @@
 <body>
 
 	<div id="page" data-page="<?php echo $page['name'];?>">
-		<?php include __DIR__.'/php/common/1-header.php'; ?>
+		<?php include __DIR__.'/1-header.php'; ?>
 		
 		<section id="page-main">
-			<?php require __DIR__.'/php/'.$page['php'];?>
+			<?php require __DIR__.'/'.$page['php'];?>
 		</section>
 	
-		<?php include __DIR__.'/php/common/2-footer.php'; ?>
+		<?php include __DIR__.'/2-footer.php'; ?>
 	</div><!-- end of page -->
 <script src="/js/<?php echo $page['js']?>"></script>
 </body>
