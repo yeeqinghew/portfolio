@@ -1,6 +1,5 @@
 let nodelist = document.querySelectorAll("#portfolio-preview > section");
 let array = Array.from(nodelist);
-console.log(array);
 
 array.forEach(function(sec) {
 	sec.addEventListener("click", sectionOnClick);
