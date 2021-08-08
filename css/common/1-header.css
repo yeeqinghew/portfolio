@@ -1,9 +1,3 @@
-@font-face {
-	font-family: 'Cormorant';
-	src:  url('../../font/Cormorant-Regular.woff2') format('woff2'),
-	url('../../font/Cormorant-Regular.woff') format('woff');
-}
-
 html {
 	background-color: #E4F6F8;
 	font-family: 'Neue Haas Display', sans-serif;

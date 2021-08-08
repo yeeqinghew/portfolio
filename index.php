@@ -7,6 +7,10 @@ if ($_SERVER['SERVER_PORT'] != 80 && $_SERVER['SERVER_PORT'] != 443) {
 require(__DIR__.'/private/findPage.php');
 $page = findPage();
 
+echo "<script>console.log('Debug Pages: " . $page['html'] . "' );</script>";
+echo "<script>console.log('Debug Pages: " . $page['css'] . "' );</script>";
+echo "<script>console.log('Debug Pages: " . $page['js'] . "' );</script>";
+
 $escaped_page_title = htmlspecialchars($page['title']);
 $escaped_page_description = htmlspecialchars($page['description']);
 
