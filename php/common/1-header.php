@@ -2,7 +2,7 @@
 <script>
 </script>
 <section id="site-header">
-	<p id="website-name"><a href="/"><strong> Yee Qing</strong></a></p>
+	<p id="website-name"><a href="/homepage"><strong> Yee Qing</strong></a></p>
 	<a href="mailto:yeeqinghew@gmail.com">
 		<p id="email"><strong>yeeqinghew@gmail.com </strong></p>
 	</a>

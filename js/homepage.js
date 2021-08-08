@@ -11,7 +11,7 @@ function sectionOnClick(e) {
 		window.location.href = 'portfolio-pmid';
 	}
 	if (e.target.id === 'emservices') {
-		window.location.href = 'portfolio-emservices';
+		window.location.href = 'portfolio-em';
 	}
 	if (e.target.id === 'shoppawholic') {
 		window.location.href = 'portfolio-shoppawholic';
