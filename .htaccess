@@ -1,4 +1,0 @@
-#for apache (.htaccess)
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule .* index.php
