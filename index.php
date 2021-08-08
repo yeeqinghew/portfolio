@@ -31,25 +31,7 @@
 		<?php include __DIR__.'/php/common/1-header.php'; ?>
 		
 		<section id="page-main">
-			<?php
-				if (isset($_GET['page'])) {
-					echo "<script>console.log('******* " . $_GET['page'] . "' );</script>";
-					switch($_GET['page']) {
-					    case 'portfolio-pmid':
-					        include 'php/portfolio-pmid.php';
-					        break;
-					    case 'portfolio-em':
-					        include 'php/portfolio-em.php';
-					        break;
-					    case 'portfolio-shoppawholic':
-					        include 'php/portfolio-shoppawholic.php';
-					        break;
-					    default:
-					        include 'php/homepage.php';
-
-					}
-				} 
-			?>
+			<?php require __DIR__.'/php/'.$page['php'];?>
 		</section>
 	
 		<?php include __DIR__.'/php/common/2-footer.php'; ?>
