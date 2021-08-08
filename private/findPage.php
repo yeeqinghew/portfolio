@@ -21,12 +21,13 @@ function findPage() {
 
 	// Read pages.json
 	$json = file_get_contents(__DIR__.'/pages.json');
-	
 	$metas = json_decode($json, TRUE); // format to associate array
 
 	// Get meta for page
 	$name = $_GET['page'] ?? $metas['']; // default page: ''
+
 	$last_slash_index = strpos($name, '/');
+
 	if ($last_slash_index === FALSE) {
 		// Check if meta for this page is defined
 		$result = $metas[$name];

@@ -8,13 +8,13 @@ array.forEach(function(sec) {
 function sectionOnClick(e) {
 	if (e.target.id === 'pmid') {
 		console.log('pmid');
-		window.location.href = '/portfolio-pmid';
+		window.location.href = 'portfolio-pmid';
 	}
 	if (e.target.id === 'emservices') {
-		window.location.href = '/portfolio-emservices';
+		window.location.href = 'portfolio-emservices';
 	}
 	if (e.target.id === 'shoppawholic') {
-		window.location.href = '/portfolio-shoppawholic';
+		window.location.href = 'portfolio-shoppawholic';
 	}
 
 }

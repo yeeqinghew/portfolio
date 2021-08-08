@@ -2,5 +2,8 @@
     "name": "yeeqinghew/portfolio",
     "require": {
         "symfony/apache-pack": "^1.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
     }
 }
