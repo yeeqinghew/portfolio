@@ -1,0 +1,85 @@
+{
+    "packages": [
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v196",
+            "version_normalized": "196.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "0ade6e8c8bcdcfa7b193d5c2e341aa681fe4e2a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/0ade6e8c8bcdcfa7b193d5c2e341aa681fe4e2a1",
+                "reference": "0ade6e8c8bcdcfa7b193d5c2e341aa681fe4e2a1",
+                "shasum": ""
+            },
+            "time": "2021-07-30T16:28:01+00:00",
+            "bin": [
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "nginx",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v196"
+            },
+            "install-path": "../heroku/heroku-buildpack-php"
+        },
+        {
+            "name": "symfony/apache-pack",
+            "version": "v1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "shasum": ""
+            },
+            "time": "2017-12-12T01:46:35+00:00",
+            "type": "symfony-pack",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "support": {
+                "issues": "https://github.com/symfony/apache-pack/issues",
+                "source": "https://github.com/symfony/apache-pack/tree/master"
+            },
+            "install-path": "../symfony/apache-pack"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": [
+        "heroku/heroku-buildpack-php"
+    ]
+}
