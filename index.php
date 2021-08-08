@@ -7,7 +7,7 @@ if ($_SERVER['SERVER_PORT'] != 80 && $_SERVER['SERVER_PORT'] != 443) {
 require(__DIR__.'/private/findPage.php');
 $page = findPage();
 
-echo "<script>console.log('Debug Pages: " . $page['html'] . "' );</script>";
+echo "<script>console.log('Debug Pages: " . $page['php'] . "' );</script>";
 echo "<script>console.log('Debug Pages: " . $page['css'] . "' );</script>";
 echo "<script>console.log('Debug Pages: " . $page['js'] . "' );</script>";
 
@@ -31,13 +31,13 @@ header('X-Frame-Options: Deny');
 </head>
 <body>
 	<div id="page" data-page="<?php echo $page['name'];?>">
-		<?php include __DIR__.'/html/common/1-header.html'; ?>
+		<?php include __DIR__.'/php/common/1-header.php'; ?>
 		
 		<section id="page-main">
-			<?php require __DIR__.'/html/'.$page['html'];?>
+			<?php require __DIR__.'/php/'.$page['php'];?>
 		</section>
 	
-		<?php include __DIR__.'/html/common/2-footer.html'; ?>
+		<?php include __DIR__.'/php/common/2-footer.php'; ?>
 	</div><!-- end of page -->
 <script src="/js/<?php echo $page['js']?>"></script>
 </body>

@@ -12,7 +12,7 @@
 
 /***
  * Determine:
- * - $page['title', 'description', 'html', 'css', 'js', 'img']
+ * - $page['title', 'description', 'php', 'css', 'js', 'img']
  * - $page['canonical'] and other optional meta
  * @input: $_GET['page']
  * @return: {array}
@@ -32,12 +32,12 @@ function findPage() {
 		// Check if meta for this page is defined
 		$result = $metas[$name];
 		
-		// Derive defaults for HTML, CSS, JS, IMG
+		// Derive defaults for HTML, CSS, JS
 		if (!isset($result['name'])) {
 			$result['name'] = $name;
 		}
-		if (!isset($result['html'])) {
-			$result['html'] = $name .'.html';
+		if (!isset($result['php'])) {
+			$result['php'] = $name .'.php';
 		}
 		if (!isset($result['css'])) {
 			$result['css'] = $name .'.css';
