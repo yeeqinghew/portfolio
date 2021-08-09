@@ -24,11 +24,6 @@
 				<img id="rainbow" src="../../img/rainbow.png" alt="">
 			</section>
 
-			<section id="about-me">
-				<h2>A little about me</h2>
-				<p>I'm an enthusiatic, responsible and hardworking individual with industry experience building websites and web applications. </p>
-			</section>
-
 			<section id="portfolio-preview">
 				<h2>Past projects </h2>
 				<section id="pmid">
