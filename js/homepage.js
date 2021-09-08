@@ -8,15 +8,15 @@ array.forEach(function(sec) {
 console.log(array);
 
 function sectionOnClick(e) {
-	if (e.target.id === 'pmid') {
-		window.location.href = '/portfolio-pmid.php';
-	}
-	if (e.target.id === 'emservices') {
-		window.location.href = '/portfolio-em.php';
-	}
-	if (e.target.id === 'shoppawholic') {
-		window.location.href = '/portfolio-shoppawholic.php';
-	}
+	// if (e.target.id === 'pmid') {
+	// 	window.location.href = '/portfolio-pmid.php';
+	// }
+	// if (e.target.id === 'emservices') {
+	// 	window.location.href = '/portfolio-em.php';
+	// }
+	// if (e.target.id === 'shoppawholic') {
+	// 	window.location.href = '/portfolio-shoppawholic.php';
+	// }
 
 }
 
