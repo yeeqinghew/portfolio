@@ -31,7 +31,7 @@
 					</figure>
 					<section class="text">
 						<h3>Project Manager and Interior Designer (PMID) and Client App</h3>
-						<p>PMID and Client applications are progressive web applications that serves as a tool between the interior designer and client to ease the communication between them to ease the Interior Design and Renovation processes. </p>
+						<p>PMID and Client applications are progressive web applications that serves as a tool between the interior designer and client to ease the communication between them. </p>
 					</section>
 				</section>
 				<section id="emservices">
