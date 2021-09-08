@@ -15,7 +15,8 @@
 				<section class="text">
 					<p id="country"><strong>  Singapore</strong></p>
 					<h1>Hello , <br/>I'm Yee Qing</h1>
-					<p id="short-intro">I'm an Information Systems undergraduate, specializing in Financial Technology and expecting to graduate in 2021. I have unwavering passion and energy for coding. </p>
+					<p id="short-intro">I'm an Information Systems undergraduate, specializing in Financial Technology and expecting to graduate in 2021. </p>
+					<p id="short-intro">I am passionate about technology and have industry experience building websites and web applications. </p>
 				</section>
 				<figure>
 					<img src="../../img/me.png" alt="">
