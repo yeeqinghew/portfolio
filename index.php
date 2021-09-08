@@ -4,10 +4,9 @@
 	<meta charset="utf-8">
 	<title>Yee Qing</title>
 	<link rel="icon" href="../../img/star.svg">
-	<link rel="stylesheet" type="text/css" href="/css/homepage.css?v=1" data-page="<?php echo $page['name'];?>">
+	<link rel="stylesheet" type="text/css" href="/css/homepage.css" data-page="<?php echo $page['name'];?>">
 </head>
 <body>
-
 	<div id="page" data-page="<?php echo $page['name'];?>">
 		<?php include __DIR__.'/1-header.php'; ?>
 		
@@ -21,14 +20,14 @@
 				<figure>
 					<img src="../../img/me.png" alt="">
 				</figure>
-				<img id="rainbow" src="../../img/rainbow.png" alt="">
+				<img id="rainbow" src="../../img/rainbow-2.png" alt=""/>
 			</section>
 
 			<section id="portfolio-preview">
 				<h2>Past projects </h2>
 				<section id="pmid">
 					<figure>
-						<img src="../../img/pmid.png" alt="pmid-client">
+						<img src="../../img/pmid.png" alt="pmid-client"/>
 					</figure>
 					<section class="text">
 						<h3>Project Manager and Interior Designer (PMID) and Client App</h3>
@@ -37,7 +36,7 @@
 				</section>
 				<section id="emservices">
 					<figure>
-						<img src="../../img/em.png" alt="em">
+						<img src="../../img/em.png" alt="em"/>
 					</figure>
 					<section class="text">
 						<h3>Easy Management</h3>
@@ -46,7 +45,7 @@
 				</section>
 				<section id="shoppawholic">
 					<figure>
-						<img src="../../img/shoppawholic.png" alt="shoppawholic">
+						<img src="../../img/shoppawholic.png" alt="shoppawholic"/>
 					</figure>
 					<section class="text">
 						<h3>shopPAWholic</h3>

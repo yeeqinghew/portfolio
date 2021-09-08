@@ -17,18 +17,6 @@
   }
 }
 
-@keyframes slideright {
-  from {
-    margin-right: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   25% { transform: translate(-2px, 0px) rotate(1deg); }
@@ -64,8 +52,8 @@
 
 #page-main #intro #rainbow {
 	position: absolute;
-	left: 264px;
-    top: auto;
+	left: 580px;
+  top: 320px;
 }
 
 #page-main #intro .text #country::before {
@@ -82,8 +70,6 @@
 	font-size: 6rem;
 	line-height: 1.25;
 	margin: 56px 0 72px 0;
-  transform-style: preserve-3d;
-  opacity: 1;
 }
 
 #page-main #short-intro {
