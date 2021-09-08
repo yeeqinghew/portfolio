@@ -17,6 +17,5 @@ function sectionOnClick(e) {
 	// if (e.target.id === 'shoppawholic') {
 	// 	window.location.href = '/portfolio-shoppawholic.php';
 	// }
-
 }
 
