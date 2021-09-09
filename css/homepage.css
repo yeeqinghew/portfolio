@@ -63,14 +63,14 @@
 }
 
 #page-main #portfolio-preview {
-	margin: 40px 0 10px 0;
+	margin: 60px 0 10px 0;
 }
 
 #page-main #portfolio-preview figure {
 	display: inline-block;
 	vertical-align: middle;
 	width: 400px;
-	margin: 20px 20px 20px 20px;
+	margin: 20px;
 }
 
 #page-main #portfolio-preview figure img {

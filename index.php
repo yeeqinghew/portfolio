@@ -15,7 +15,7 @@
 				<section class="text">
 					<p id="country"><strong>  Singapore</strong></p>
 					<h1>Hello, I'm Yee Qing</h1>
-					<p class="short-intro">I'm a penultimate year Information Systems student at the National University of Singapore. </p>
+					<p class="short-intro">I'm a final year Information Systems student at the National University of Singapore. </p>
 					<p class="short-intro">I love technology and have a strong interest in full stack development. I aspire to use my knowledge and skills to build things that will leave an impact on society in the future.</p>
 				</section>
 				<figure>
